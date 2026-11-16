@@ -1,4 +1,4 @@
 # Web-Assignment
-HTML 
-CSS
-JS
+HTML, 
+CSS,
+JS,

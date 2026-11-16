@@ -1,0 +1,191 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: rgb(224, 134, 23);
+}
+
+p {
+    color: black;
+}
+
+button {
+    color: burlywood;
+    background-color: brown;
+    cursor: pointer;
+}
+
+body {
+    background-color: bisque;
+}
+
+.myclass {
+    color: red;
+}
+
+#box {
+    background-color: coral;
+}
+
+#box1 {
+    box-sizing: border-box;
+    width: 270px;
+    height: 270px;
+    padding: 25px;
+    border: 4px solid rgb(215, 170, 170);
+    margin: 12px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+}
+
+.cards article {
+    border: 1px solid #d1b8a5;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cards h3 {
+    margin-top: 0;
+    color: black;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#status-banner {
+    font-weight: bold;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.calc-list {
+    list-style: none;
+    padding: 0;
+}
+
+#total {
+    font-weight: bold;
+}
+
+#story {
+    margin: 16px 0;
+}
+
+#box2 {
+    width: fit-content;
+    padding: 12px 30px;
+    border: 2px solid black;
+    margin: 20px auto 15px auto;
+    background-color: coral;
+    text-align: center;
+}
+
+#box2 h3 {
+    margin: 0;
+}
+
+.menu-layout-grid {
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) minmax(300px, 600px);
+    justify-content: center;
+    gap: 30px;
+    align-items: start;
+    margin: 20px auto;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.menu-table th,
+.menu-table td {
+    border: 1px solid grey;
+    padding: 10px 15px;
+    text-align: left;
+    color: black;
+}
+
+.menu-table th {
+    background-color: #f0e0d0;
+}
+
+#order {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+#order h2 {
+    text-align: center;
+}
+
+#order input[type="text"],
+#order textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#order fieldset {
+    margin: 0;
+}
+
+#order button[type="submit"] {
+    margin-top: 12px;
+}
+body.dark {
+    background-color: #080707;
+    color: #f2f2f2;
+}
+
+body.dark p,
+body.dark h3,
+body.dark li,
+body.dark label,
+body.dark legend,
+body.dark a {
+    color: #f2f2f2;
+}
+
+body.dark .cards article p,
+body.dark .cards article h3,
+body.dark .cards h3,
+body.dark #box2 h3,
+body.dark .menu-table th,
+body.dark .menu-table td {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .menu-layout-grid {
+        grid-template-columns: 1fr;
+        justify-content: stretch;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

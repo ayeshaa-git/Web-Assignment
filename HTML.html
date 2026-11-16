@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayesha's baking corner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="theme-toggle">Toggle Light/Dark Mode</button>
+
+    <h1>BakedCharmm</h1>
+    <p id="status-banner"></p>
+
+    <h2>Baked with Love</h2>
+    <p>Happiness is Homemade</p>
+
+    <header>
+        <div>
+            <h3>Welcome to Bakedcharmm</h3>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Custom Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to bakedcharmm! "Fresh, delicious bakery treats made right at home."</p>
+
+            <article id="story">
+                <h3>Our Story</h3>
+                <p>Bakedcharmm started in a small home kitchen with one simple recipe and a big love for chocolate.</p>
+                <p id="more-text" style="display: none;">
+                    Today every brownie, fudge slice and cookie is still baked by hand in small batches,
+                    using real cocoa, organic butter and ingredients from local dairy farms.
+                    Each order is packed with care so it reaches you fresh.
+                </p>
+                <button id="read-more-btn">Read More</button>
+            </article>
+
+            <div id="box1">
+                <h3>Our 3-Step Baking Promise</h3>
+                <ol type="A">
+                    <li>We use 100% real cocoa and organic butter.</li>
+                    <li>Everything is baked fresh daily in small batches.</li>
+                    <li>We source our ingredients from local dairy farms.</li>
+                </ol>
+            </div>
+
+            <div>
+                <img src="image.jpeg" alt="Freshly baked chocolate brownies" height="250">
+            </div>
+
+            <p>Learn more about our page on
+                <a href="https://www.instagram.com/bakedcharmm?stkn=ZnhyNmoybDVscW9w&amp;utm_source=qr">Instagram</a>.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+
+            <div class="cards">
+                <article>
+                    <h3>Chocolate Brownie</h3>
+                    <p>Rich fudge brownie filled with dark chocolate chips.</p>
+                    <p>Price: 200pkr</p>
+                </article>
+                <article>
+                    <h3>Mini Chocolate Fudge</h3>
+                    <p>Made with whipped cream and chocolate ganache.</p>
+                    <p>Price: 600pkr / slice</p>
+                </article>
+                <article>
+                    <h3>Chocolate Chip Cookie</h3>
+                    <p>Classic golden cookie loaded with melted chocolate.</p>
+                    <p>Price: 650pkr</p>
+                </article>
+            </div>
+
+            <div id="box2">
+                <h3>Menu Summary Table</h3>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+                <button class="filter-btn" data-filter="pastries">Pastries</button>
+            </div>
+
+            <div class="menu-layout-grid">
+                <div id="calculator">
+                    <h3>Pick Your Treats</h3>
+                    <ul class="calc-list">
+                        <li><label><input type="checkbox" class="item-check" value="200"> Chocolate Brownie - 200pkr</label></li>
+                        <li><label><input type="checkbox" class="item-check" value="600"> Mini Chocolate Fudge - 600pkr</label></li>
+                        <li><label><input type="checkbox" class="item-check" value="650"> Chocolate Chip Cookie - 650pkr</label></li>
+                        <li><label><input type="checkbox" class="item-check" value="250"> Hot Chocolate - 250pkr</label></li>
+                    </ul>
+                    <p id="total">Total: 0pkr</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chocolate Brownie</td>
+                                <td>Pastries</td>
+                                <td>200pkr</td>
+                            </tr>
+                            <tr>
+                                <td>Mini Chocolate Fudge</td>
+                                <td>Pastries</td>
+                                <td>600pkr</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate Chip Cookie</td>
+                                <td>Pastries</td>
+                                <td>650pkr</td>
+                            </tr>
+                            <tr>
+                                <td>Hot Chocolate</td>
+                                <td>Drinks</td>
+                                <td>250pkr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Order Ahead</h2>
+
+            <form action="#" method="POST">
+                <div>
+                    <label for="fullname">Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="birth-year">Birth Year (for student/senior discount):</label><br>
+                    <input type="text" id="birth-year" name="birthyear" placeholder="e.g. 2002">
+                </div>
+                <br>
+
+                <fieldset>
+                    <legend>Select Main Item:</legend>
+                    <label>
+                        <input type="radio" name="item" value="brownie" checked> Brownie
+                    </label>
+                    <label>
+                        <input type="radio" name="item" value="NoBakedFudge"> NoBakedFudge Slice
+                    </label>
+                    <label>
+                        <input type="radio" name="item" value="cookie"> Cookie
+                    </label>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Options:</legend>
+                    <label>
+                        <input type="checkbox" name="option" value="extra-chocolate"> Add Extra Chocolate Drizzle
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="option" value="gift-box"> Wrap as Gift
+                    </label>
+                </fieldset>
+                <br>
+
+                <div>
+                    <label for="special-notes">Special Instructions:</label><br>
+                    <textarea id="special-notes" name="notes" maxlength="100" rows="3" cols="40"></textarea>
+                    <p id="char-count">100 characters remaining</p>
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+
+            <p id="form-message"></p>
+            <p id="discount-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bakedcharmm <a href="#about">Back to top</a></p>
+    </footer>
+</body>
+</html>
